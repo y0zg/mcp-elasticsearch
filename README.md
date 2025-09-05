@@ -40,19 +40,7 @@ That's it! Now you can chat with your logs.
 
 **You:** "Find unique public IPs for ingress traffic in the last 5 minutes"
 
-**Claude:** 
-- Found 1 unique IP address
-- 93 total log entries
-- All traffic is internal Kubernetes health checks
-- Pattern: Every 30 seconds from Prometheus Blackbox Exporter
-
-**You:** "Analyze the traffic patterns"
-
-**Claude:**
-- 10 requests in 5 minutes
-- All hitting `/api/v1/health` endpoint
-- 200 status codes (all successful)
-- Automated monitoring from AWS EC2 instance
+<img width="826" height="727" alt="SCR-20250905-ryei" src="https://github.com/user-attachments/assets/48932686-c85f-406e-947e-fefbe9cb3a2f" />
 
 ## Configuration
 
