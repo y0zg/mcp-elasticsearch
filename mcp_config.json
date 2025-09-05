@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "elasticsearch-logs": {
+      "command": "python",
+      "args": [
+        "mcp-elasticsearch-server.py"
+      ],
+      "cwd": ".",
+      "env": {
+        "ES_HOST": "localhost:9200"
+      }
+    }
+  }
+}

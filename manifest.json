@@ -1,0 +1,32 @@
+{
+  "dxt_version": "0.1",
+  "name": "mcp-elasticsearch",
+  "version": "1.0.0",
+  "description": "Elasticsearch MCP Server for log analysis and performance monitoring",
+  "author": {
+    "name": "Oleksandr Kulbida"
+  },
+  "server": {
+    "type": "python",
+    "entry_point": "mcp-elasticsearch-server.py",
+    "mcp_config": {
+      "command": "${__dirname}/venv/bin/python",
+      "args": [
+        "${__dirname}/mcp-elasticsearch-server.py"
+      ],
+      "env": {
+        "ES_HOST": "localhost:9200"
+      }
+    }
+  },
+  "user_config": {
+    "es_host": {
+      "type": "string",
+      "title": "Elasticsearch Host",
+      "description": "Elasticsearch host and port (e.g., localhost:9200)",
+      "default": "localhost:9200",
+      "required": false
+    }
+  },
+  "license": "MIT"
+}
